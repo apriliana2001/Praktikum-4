@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Efek fade</title>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+   $(document).ready(function() {
+  
+     $("#fade-out").click(function() {
+       $("#box").fadeOut("slow");
+     })
+  
+     $("#fade-in").click(function() {
+       $("#box").fadeIn("fast");
+     })
+  
+     $("#fade-to").click(function() {
+       $("#box").fadeTo(3000,0.3);
+     })
+  
+   });
+   </script>
+   <style>
+   #box {
+     width: 150px;
+     height: 200px;
+     background-color: yellow;
+     border: 3px solid red;
+   }
+   
+   </style>
+</head>
+<body>
+<div id="box"></div>
+<br><br>
+<button id="fade-out">Fade Out</button>
+<button id="fade-in">Fade In</button>
+<button id="fade-to">Fade To 0.3</button>
+</body>
+</html>

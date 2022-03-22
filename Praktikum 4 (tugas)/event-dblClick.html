@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Event double klik</title>
+<style>
+	  div { 
+			height:80px;
+			width:80px;
+			display: inline;
+			float: left;
+			margin: 10px;
+			margin-top: 50px;
+	 }
+
+	  
+</style>
+<script src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+
+$( "div" ).dblclick(function() {
+var color = $( this ).css( "background-color", "red" );
+});
+});
+
+
+</script>
+</head>
+<body>
+	<span>Klik 2x pada setiap kotak untuk mengubah warnanya</span>
+  <div style="background-color:yellow;"> </div>
+  <div style="background-color:yellow;"> </div>
+  <div style="background-color:yellow;"> </div>
+  <div style="background-color:yellow;"> </div>
+
+</body>
+</html>
